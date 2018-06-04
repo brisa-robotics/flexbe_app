@@ -41,3 +41,5 @@ add_custom_target(nw_install DEPENDS nw)
 if(NOT ${CMAKE_CURRENT_SOURCE_DIR}/nw)
   safe_execute_process(COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/bin/nwjs_install)
 endif()
+
+execute_process(COMMAND npm --prefix ${PROJECT_SOURCE_DIR} install)
