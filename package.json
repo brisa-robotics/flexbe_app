@@ -18,6 +18,10 @@
     "min_height": 650
   },
   "dependencies" : {
-    "scp2" : "^0.5.0"
+    "scp2" : "^0.5.0",
+    "nw" : "0.27.2"
+  },
+  "scripts": {
+    "start": "nw --password-store=basic $*"
   }
 }

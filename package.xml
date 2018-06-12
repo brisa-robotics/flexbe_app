@@ -1,6 +1,6 @@
-<package>
+<package format="2">
   <name>flexbe_app</name>
-  <version>2.0.6</version>
+  <version>2.1.0</version>
   <description>
      flexbe_app provides a user interface (editor + runtime control) for the FlexBE behavior engine.
   </description>
@@ -12,8 +12,12 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <run_depend>rospy</run_depend>
-  <run_depend>genpy</run_depend>
-  <run_depend>actionlib</run_depend>
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>genpy</exec_depend>
+  <exec_depend>actionlib</exec_depend>
+  <exec_depend>flexbe_mirror</exec_depend>
+  <exec_depend>flexbe_widget</exec_depend>
+  <exec_depend>flexbe_onboard</exec_depend>
+  <depend>npm</depend>
 
 </package>
